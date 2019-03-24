@@ -32,11 +32,6 @@ namespace SuperHeroAPI.Controllers
             return RolesServices.GetAll().ToList();
         }
 
-        /// <summary>
-        /// Return RolebyId
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
         // GET: Role/Get/5
         [ResponseType(typeof(Role))]
         [System.Web.Http.HttpGet]

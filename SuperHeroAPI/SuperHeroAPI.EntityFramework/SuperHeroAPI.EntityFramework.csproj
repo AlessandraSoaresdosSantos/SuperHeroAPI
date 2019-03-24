@@ -98,6 +98,8 @@
       <DependentUpon>201903201712463_AddClassesReferences.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Moq\Interfaces\IRolesMoq.cs" />
+    <Compile Include="Moq\RolesMoq.cs" />
     <Compile Include="PreparaHash\PreparaHash.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\AuditEventRepository.cs" />

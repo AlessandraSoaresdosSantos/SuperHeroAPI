@@ -1,19 +1,12 @@
-﻿using Microsoft.Owin;
-using Microsoft.Owin.Security.OAuth;
-using Newtonsoft.Json;
-using SuperHeroAPI.EntityFramework;
+﻿using SuperHeroAPI.EntityFramework;
 using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading;
-using System.Web;
 using System.Web.Http;
-using System.Web.Http.Description; 
+using System.Web.Http.Description;
 
 namespace SuperHeroAPI.Controllers
 {
 
-    [AuthorizeEnum(RolesEnum.Roles.Admin)]
+    //  [AuthorizeEnum(RolesEnum.Roles.Admin)]
     [RoutePrefix("api/user")]
     public class UserController : ApiController
     {
