@@ -1,23 +1,19 @@
-﻿namespace SuperHeroAPI.EntityFramework
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace SuperHeroAPI.EntityFramework
 {
-    /// <summary>
-    /// Class SuperPower
-    /// </summary>
     public class SuperPower
     {
-        /// <summary>
-        /// Retrieves or defines the SuperPower  - Id 
-        /// </summary>
-        public virtual int Id { get; set; }
+        public  int Id { get; set; }
 
-        /// <summary>
-        /// Retrieves or defines the SuperPower - Name
-        /// </summary>
-        public virtual string Name { get; set; }
+        [Required]
+        [Display(Name = "Name")]
+        [MaxLength(500)]
+        public  string Name { get; set; }
 
-        /// <summary>
-        /// Retrieves or defines the SuperPower - Description
-        /// </summary>
-        public virtual string Description { get; set; }
+        [Required]
+        [Display(Name = "Description")]
+        [MaxLength(500)]
+        public  string Description { get; set; }
     }
 }

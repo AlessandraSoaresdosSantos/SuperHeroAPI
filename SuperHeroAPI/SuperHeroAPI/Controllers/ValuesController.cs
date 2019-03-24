@@ -1,18 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
+using System.Security.Claims;
+using System.Web;
 using System.Web.Http;
 
 namespace SuperHeroAPI.Controllers
 {
+    [System.Web.Http.Authorize]
     public class ValuesController : ApiController
     {
         // GET api/values
-        public IEnumerable<string> Get()
+        public IHttpActionResult Get()
         {
-            return new string[] { "value1", "value2" };
+            ClaimsIdentity claimsIdentity = User.Identity as ClaimsIdentity;
+
+            var claims = claimsIdentity.Claims.Select(x => new { type = x.Type, value = x.Value });
+
+            return Ok(claims);
         }
 
         // GET api/values/5

@@ -1,18 +1,18 @@
-﻿namespace SuperHeroAPI.EntityFramework
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace SuperHeroAPI.EntityFramework
 {
-    /// <summary>
-    /// Class Role
-    /// </summary>
     public class Role
     {
-        /// <summary>
-        /// Retrieves or defines the Role  - Id 
-        /// </summary>
-        public virtual int Id { get; set; }
+        public int Id { get; set; }
 
-        /// <summary>
-        /// Retrieves or defines the Role - Name
-        /// </summary>
-        public virtual string Name { get; set; }
+        
+        public string Name { get; set; }
+
+        public int User_Id { get; set; }
+
+        [ForeignKey(nameof(User_Id))]
+        public User User { get; set; }
     }
 }

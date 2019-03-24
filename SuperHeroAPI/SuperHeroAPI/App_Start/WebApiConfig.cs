@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Microsoft.Owin.Security.OAuth;
 using System.Web.Http;
 
 namespace SuperHeroAPI
@@ -9,16 +7,15 @@ namespace SuperHeroAPI
     {
         public static void Register(HttpConfiguration config)
         {
-            // Serviços e configuração da API da Web
-
+ 
             // Rotas da API da Web
-            config.MapHttpAttributeRoutes();
+            //config.MapHttpAttributeRoutes();
 
-            config.Routes.MapHttpRoute(
-                name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
-            );
+            //config.Routes.MapHttpRoute(
+            //    name: "DefaultApi",
+            //    routeTemplate: "api/{controller}/{id}",
+            //    defaults: new { id = RouteParameter.Optional }
+            //);
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -43,11 +43,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="JetBrains.Annotations, Version=2018.3.0.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
+      <HintPath>..\packages\JetBrains.Annotations.2018.3.0\lib\net20\JetBrains.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Data.Entity.Repository, Version=2.0.0.1, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.Entity.Repository.2.0.0.1\lib\net45\System.Data.Entity.Repository.dll</HintPath>
     </Reference>
@@ -67,25 +75,64 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    <Reference Include="UnityRepo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UnityRepo.1.7.0\lib\net40\UnityRepo.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityRepoContracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UnityRepo.1.7.0\lib\net40\UnityRepoContracts.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccess\DataConfiguration.cs" />
     <Compile Include="Domain\AuditEvent.cs" />
     <Compile Include="Domain\ProtectionArea.cs" />
     <Compile Include="Domain\Role.cs" />
     <Compile Include="Domain\SuperHero.cs" />
     <Compile Include="Domain\SuperPower.cs" />
     <Compile Include="Domain\User.cs" />
+    <Compile Include="Migrations\201903201712463_AddClassesReferences.cs" />
+    <Compile Include="Migrations\201903201712463_AddClassesReferences.Designer.cs">
+      <DependentUpon>201903201712463_AddClassesReferences.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="PreparaHash\PreparaHash.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\AuditEventRepository.cs" />
     <Compile Include="Repositories\Context\SuperHeroAPIContext.cs" />
+    <Compile Include="Repositories\Interfaces\IAuditEventRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IProtectionAreaRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IRepositoryBase.cs" />
+    <Compile Include="Repositories\Interfaces\IRoleRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ISuperHeroRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ISuperPowerRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IUsersRepository.cs" />
+    <Compile Include="Repositories\ProtectionAreaRepository.cs" />
+    <Compile Include="Repositories\Query\QuerySet.cs" />
+    <Compile Include="Repositories\Query\SortQuery.cs" />
+    <Compile Include="Repositories\RepositoryBase.cs" />
+    <Compile Include="Repositories\RoleRepository.cs" />
+    <Compile Include="Repositories\SuperHeroRepository.cs" />
+    <Compile Include="Repositories\SuperPowerRepository.cs" />
+    <Compile Include="Repositories\UnityOfWork.cs" />
+    <Compile Include="Repositories\UsersRepository.cs" />
+    <Compile Include="Rules\SuperPowerValidation.cs" />
+    <Compile Include="Services\AuditEventServices.cs" />
+    <Compile Include="Services\BaseServices.cs" />
+    <Compile Include="Services\Interfaces\IAuditEventServices.cs" />
+    <Compile Include="Services\Interfaces\IProtectionAreaServices.cs" />
+    <Compile Include="Services\Interfaces\IRoleServices.cs" />
+    <Compile Include="Services\Interfaces\IServices.cs" />
+    <Compile Include="Services\Interfaces\ISuperHeroServices.cs" />
+    <Compile Include="Services\Interfaces\ISuperPowerServices.cs" />
+    <Compile Include="Services\Interfaces\IUsersServices.cs" />
+    <Compile Include="Services\ProtectionAreaServices.cs" />
+    <Compile Include="Services\RoleServices.cs" />
+    <Compile Include="Services\SuperHeroServices.cs" />
+    <Compile Include="Services\SuperPowerServices.cs" />
+    <Compile Include="Services\UsersServices.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -95,6 +142,20 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SuperHeroAPI.Common\SuperHeroAPI.Common.csproj">
+      <Project>{81538ceb-f49a-4a82-8fa8-3ebc377e92f4}</Project>
+      <Name>SuperHeroAPI.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201903201712463_AddClassesReferences.resx">
+      <DependentUpon>201903201712463_AddClassesReferences.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\Extensions\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -109,9 +170,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>64476</DevelopmentServerPort>
+          <DevelopmentServerPort>5000</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:64476/</IISUrl>
+          <IISUrl>http://localhost:5000/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
@@ -125,7 +186,7 @@
     <PropertyGroup>
       <ErrorText>Este projeto faz referência a pacotes do NuGet que não estão presentes neste computador. Use a Restauração de Pacotes do NuGet para baixá-los.  Para obter mais informações, consulte http://go.microsoft.com/fwlink/?LinkID=322105. O arquivo ausente é {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

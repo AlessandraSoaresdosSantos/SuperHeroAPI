@@ -1,0 +1,111 @@
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\SuperHeroAPI.Common.dll.config
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\SuperHeroAPI.Common.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\SuperHeroAPI.Common.pdb
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\csc.exe
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\csc.exe.config
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\csc.rsp
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\csi.exe
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\csi.exe.config
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\csi.rsp
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.AppContext.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Console.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.IO.Compression.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.IO.Pipes.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Security.Claims.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.ValueTuple.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Xml.XPath.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\vbc.exe
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\vbc.exe.config
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\vbc.rsp
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\VBCSCompiler.exe
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\obj\Debug\SuperHeroAPI.Common.csproj.CoreCompileInputs.cache
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\obj\Debug\SuperHeroAPI.Common.csproj.CopyComplete
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\obj\Debug\SuperHeroAPI.Common.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.Common\obj\Debug\SuperHeroAPI.Common.pdb
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\SuperHeroAPI.Common.dll.config
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\SuperHeroAPI.Common.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\SuperHeroAPI.Common.pdb
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\csc.exe
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\csc.exe.config
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\csc.rsp
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\csi.exe
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\csi.exe.config
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\csi.rsp
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.AppContext.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Console.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.IO.Compression.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Security.Claims.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.ValueTuple.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\vbc.exe
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\vbc.exe.config
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\vbc.rsp
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\VBCSCompiler.exe
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\obj\Debug\SuperHeroAPI.Common.csproj.CoreCompileInputs.cache
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\obj\Debug\SuperHeroAPI.Common.csproj.CopyComplete
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\obj\Debug\SuperHeroAPI.Common.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\obj\Debug\SuperHeroAPI.Common.pdb
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.Common\obj\Debug\SuperHeroAPI.Common.csprojAssemblyReference.cache

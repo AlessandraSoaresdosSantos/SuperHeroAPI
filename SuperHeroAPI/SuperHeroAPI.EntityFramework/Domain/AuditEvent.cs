@@ -1,40 +1,33 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SuperHeroAPI.EntityFramework
 {
-    /// <summary>
-    /// Class AuditEvent
-    /// </summary>
     public class AuditEvent
     {
-        /// <summary>
-        /// Retrieves or defines the AuditEvent  - Id 
-        /// </summary>
-        public virtual int Id { get; set; }
+        public int Id { get; set; }
 
-        /// <summary>
-        /// Retrieves or defines the AuditEvent - Entity
-        /// </summary>
-        public virtual string Entity { get; set; }
+        [Required]
+        [Display(Name ="Entity")]
+        [MaxLength(500)]
+        public string Entity { get; set; }
 
-        /// <summary>
-        /// Retrieves or defines the AuditEvent  - EntityId 
-        /// </summary>
-        public virtual int EntityId { get; set; }
+        [Display(Name = "EntityId")]
+        public int EntityId { get; set; }
 
-        /// <summary>
-        /// Retrieves or defines the AuditEvent  - Datetime 
-        /// </summary>
-        public virtual DateTime Datetime { get; set; }
+        [Display(Name = "Datetime")]
+        public DateTime Datetime { get; set; }
 
-        /// <summary>
-        /// Retrieves or defines the AuditEvent  - Username 
-        /// </summary>
+        [Required]
+        [Display(Name = "Action")]
+        [MaxLength(200)]
+        public string Action { get; set; }
+
+        public int Username_Id { get; set; }
+
+        [ForeignKey(nameof(Username_Id))]
         public virtual User Username { get; set; }
 
-        /// <summary>
-        /// Retrieves or defines the AuditEvent - Action
-        /// </summary>
-        public virtual string Action { get; set; }
     }
 }

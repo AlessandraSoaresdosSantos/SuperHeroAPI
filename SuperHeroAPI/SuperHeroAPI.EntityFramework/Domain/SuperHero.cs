@@ -1,35 +1,36 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SuperHeroAPI.EntityFramework
 {
-    /// <summary>
-    /// Class SuperHero
-    /// </summary>
     public class SuperHero
     {
-        /// <summary>
-        /// Retrieves or defines the SuperHero  - Id 
-        /// </summary>
-        public virtual int Id { get; set; }
+        public SuperHero()
+        {
+            this.SuperPowers = new List<SuperPower>();
+        }
 
-        /// <summary>
-        /// Retrieves or defines the SuperHero - Name
-        /// </summary>
-        public virtual string Name { get; set; }
+        public  int Id { get; set; }
 
-        /// <summary>
-        /// Retrieves or defines the SuperHero - Alias
-        /// </summary>
-        public virtual string Alias { get; set; }
+        [Required]
+        [Display(Name = "Name")]
+        [MaxLength(500)]
+        public  string Name { get; set; }
 
-        /// <summary>
-        /// Retrieves or defines the SuperHero - Has a ProtectionArea
-        /// </summary>
-        public virtual ProtectionArea ProtectionArea { get; set; }
+        [Display(Name = "Alias")]
+        [MaxLength(500)]
+        public  string Alias { get; set; }
 
-        /// <summary>
-        /// Retrieves or defines the SuperHero - Has many SuperPower
-        /// </summary>
-        public virtual ICollection<SuperPower> SuperPower { get; set; }
+        public int ProtectionArea_Id { get; set; }
+
+        [ForeignKey(nameof(ProtectionArea_Id))]
+        public  virtual ProtectionArea ProtectionArea { get; set; }
+
+        public int SuperPower_Id { get; set; }
+
+        [ForeignKey(nameof(SuperPower_Id))]
+        public virtual SuperPower SuperPower { get; set; }
+        public  virtual List<SuperPower> SuperPowers { get; set; }
     }
 }

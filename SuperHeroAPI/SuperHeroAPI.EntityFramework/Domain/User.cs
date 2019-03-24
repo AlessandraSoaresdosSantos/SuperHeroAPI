@@ -1,30 +1,18 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace SuperHeroAPI.EntityFramework
 {
-    /// <summary>
-    /// Class User
-    /// </summary>
     public class User
     {
-        /// <summary>
-        /// Retrieves or defines the User  - Id 
-        /// </summary>
-        public virtual int Id { get; set; }
+        public User() {
+            this.Roles = new List<Role>();
+        }
 
-        /// <summary>
-        /// Retrieves or defines the User - Username
-        /// </summary>
-        public virtual string Username { get; set; }
+        public int Id { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
 
-        /// <summary>
-        /// Retrieves or defines the User - Password
-        /// </summary>
-        public virtual string Password { get; set; }
-
-        /// <summary>
-        /// Retrieves or defines the User - Has many Role
-        /// </summary>
-        public virtual ICollection<Role> Role { get; set; }
+        public virtual List<Role> Roles { get; set; }
     }
 }

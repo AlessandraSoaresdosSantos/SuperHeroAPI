@@ -26,16 +26,11 @@ C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFr
 C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.IO.Compression.dll
 C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.IO.FileSystem.dll
 C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.IO.Pipes.AccessControl.dll
-C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.IO.Pipes.dll
 C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Security.AccessControl.dll
-C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Security.Claims.dll
 C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Security.Cryptography.Algorithms.dll
 C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Security.Cryptography.Encoding.dll
 C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Security.Cryptography.Primitives.dll
 C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Security.Principal.Windows.dll
 C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Text.Encoding.CodePages.dll
 C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.ValueTuple.dll
 C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Xml.ReaderWriter.dll
@@ -57,3 +52,99 @@ C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFr
 C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\obj\Debug\SuperHeroAPI.EntityFramework.csproj.CopyComplete
 C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\obj\Debug\SuperHeroAPI.EntityFramework.dll
 C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\obj\Debug\SuperHeroAPI.EntityFramework.pdb
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\SuperHeroAPI.EntityFramework.dll.config
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\SuperHeroAPI.EntityFramework.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\SuperHeroAPI.EntityFramework.pdb
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\csc.exe
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\csc.exe.config
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\csc.rsp
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\csi.exe
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\csi.exe.config
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\csi.rsp
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.AppContext.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Console.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.IO.Compression.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Net.Http.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Net.Sockets.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.ValueTuple.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Xml.XPath.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\vbc.exe
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\vbc.exe.config
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\vbc.rsp
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\VBCSCompiler.exe
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\EntityFramework.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\EntityFramework.SqlServer.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\JetBrains.Annotations.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\SuperHeroAPI.Common.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\System.Data.Entity.Repository.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\UnityRepo.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\UnityRepoContracts.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\SuperHeroAPI.Common.pdb
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\SuperHeroAPI.Common.dll.config
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\EntityFramework.xml
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\EntityFramework.SqlServer.xml
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\JetBrains.Annotations.xml
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\UnityRepo.pdb
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\UnityRepoContracts.pdb
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\obj\Debug\SuperHeroAPI.EntityFramework.csprojAssemblyReference.cache
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\obj\Debug\SuperHeroAPI.EntityFramework.AddClassesReferences.resources
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\obj\Debug\SuperHeroAPI.EntityFramework.csproj.GenerateResource.cache
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\obj\Debug\SuperHeroAPI.EntityFramework.csproj.CoreCompileInputs.cache
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\obj\Debug\SuperHeroAPI.EntityFramework.csproj.CopyComplete
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\obj\Debug\SuperHeroAPI.EntityFramework.dll
+C:\Users\asantos\OneDrive - Cisa Trading\Desktop\SuperHeroAPI-master\SuperHeroAPI\SuperHeroAPI.EntityFramework\obj\Debug\SuperHeroAPI.EntityFramework.pdb
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Net.Http.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\EntityFramework.SqlServer.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\JetBrains.Annotations.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\SuperHeroAPI.Common.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\UnityRepo.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\UnityRepoContracts.dll
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\SuperHeroAPI.Common.pdb
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\SuperHeroAPI.Common.dll.config
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\EntityFramework.SqlServer.xml
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\JetBrains.Annotations.xml
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\UnityRepo.pdb
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\bin\UnityRepoContracts.pdb
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\obj\Debug\SuperHeroAPI.EntityFramework.AddClassesReferences.resources
+C:\Users\Alessandra\source\repos\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.EntityFramework\obj\Debug\SuperHeroAPI.EntityFramework.csproj.GenerateResource.cache
