@@ -6,7 +6,7 @@ using System.Web.Http.Description;
 
 namespace SuperHeroAPI.Controllers
 {
-    
+
     public class SuperPowerController : ApiController
     {
         #region Declaração e inicialização de variáveis 
@@ -24,32 +24,55 @@ namespace SuperHeroAPI.Controllers
         #region Métodos
 
         // GET api/superpower
-      //  [AuthorizeEnum(RolesEnum.Roles.Admin, RolesEnum.Roles.Standard)]
+        [AuthorizeEnum(RolesEnum.Roles.Admin, RolesEnum.Roles.Standard)]
         [ResponseType(typeof(List<SuperPower>))]
         [System.Web.Http.HttpGet]
         [Route("api/superpower")]
         public IEnumerable<SuperPower> Get()
         {
-            return SuperPowersServices.GetAll().ToList();
+            try
+            {
+                return SuperPowersServices.GetAll().ToList();
+            }
+            catch
+            {
+                return null;
+            }
         }
 
-      //  [AuthorizeEnum(RolesEnum.Roles.Admin, RolesEnum.Roles.Standard)]
+        [AuthorizeEnum(RolesEnum.Roles.Admin, RolesEnum.Roles.Standard)]
         [ResponseType(typeof(SuperPower))]
         [System.Web.Http.HttpGet]
         [Route("api/superpower/{id:int}")]
         public IHttpActionResult Get(int id)
         {
-            return Ok(SuperPowersServices.Get(id));
+            try
+            {
+                return Ok(SuperPowersServices.Get(id));
+            }
+            catch
+            {
+                return null;
+            }
         }
 
         // POST: SuperPower/Post
-      //  [AuthorizeEnum(RolesEnum.Roles.Admin)]
+        [AuthorizeEnum(RolesEnum.Roles.Admin)]
         [ResponseType(typeof(SuperPower))]
         [System.Web.Http.HttpPost]
         [Route("api/superpower")]
-        public IHttpActionResult Post(SuperPower collection)
+        public IHttpActionResult Post(SuperPower superPower)
         {
-            return Ok(SuperPowersServices.Create(collection));
+            try
+            {
+                var _superPower = SuperPowersServices.Create(superPower);
+                new Auditing(System.Web.HttpContext.Current, _superPower.Id).RegisterAuditing();
+                return Ok(_superPower);
+            }
+            catch
+            {
+                return Ok("Erro ao incluir o SuperPower");
+            }
         }
 
         // GET: SuperPower/Put/5
@@ -59,9 +82,18 @@ namespace SuperHeroAPI.Controllers
         [Route("api/superpower")]
         public IHttpActionResult Put(int id, [FromBody]SuperPower superPower)
         {
-            superPower.Id = id;
+            try
+            {
+                superPower.Id = id;
+                var _superPower = SuperPowersServices.Update(superPower);
+                new Auditing(System.Web.HttpContext.Current, _superPower.Id).RegisterAuditing();
 
-            return Ok(SuperPowersServices.Update(superPower));
+                return Ok(_superPower);
+            }
+            catch
+            {
+                return Ok("Erro ao atualizar o SuperPower");
+            }
         }
 
         // POST: SuperPower/Delete/5
@@ -71,15 +103,23 @@ namespace SuperHeroAPI.Controllers
         [Route("api/superpower/{id:int}")]
         public IHttpActionResult Delete(int id)
         {
-            bool superPowerComSuperHero = new SuperPowerValidation().SuperPowerComSuperHero(id);
-            if (superPowerComSuperHero)
-            {
-                return Ok(SuperPowersServices.Remove(id));
+            try {
+                bool superPowerComSuperHero = new SuperPowerValidation().SuperPowerComSuperHero(id);
+                if (superPowerComSuperHero)
+                {
+                    var _superPower = SuperPowersServices.Remove(id);
+                    new Auditing(System.Web.HttpContext.Current, _superPower.Id).RegisterAuditing();
+
+                    return Ok(_superPower);
+                }
+                else
+                {
+                    return Ok($"Não é possível excluir porque o SuperPower id{id} , possui associação com SuperHero.");
+                }
             }
-            else {
-                return Ok($"Não é possível excluir porque o SuperPower id{id} , possui associação com SuperHero.");
+            catch {
+                return Ok("Erro ao excluir o SuperPower");
             }
-            
         }
 
         #endregion

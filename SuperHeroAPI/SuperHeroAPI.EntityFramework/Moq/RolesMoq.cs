@@ -54,12 +54,12 @@ namespace SuperHeroAPI.EntityFramework
             }
         }
 
-        public string Delete(Role role)
+        public string Delete(int id)
         {
 
             var carga = CargaRoles();
 
-            var query = carga.Where(x => x.Id == role.Id).FirstOrDefault();
+            var query = carga.Where(x => x.Id == id).FirstOrDefault();
 
             if (query != null)
             {

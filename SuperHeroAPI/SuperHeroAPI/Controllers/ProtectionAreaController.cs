@@ -29,30 +29,49 @@ namespace SuperHeroAPI.Controllers
         [Route("api/protectionarea")]
         public IEnumerable<ProtectionArea> Get()
         {
-            return ProtectionAreasServices.GetAll().ToList();
+            try
+            {
+                return ProtectionAreasServices.GetAll().ToList();
+            }
+            catch
+            {
+                return null;
+            }
         }
 
-        /// <summary>
-        /// Return ProtectionAreabyId
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
         // GET: api/ProtectionArea/Get/5
         [ResponseType(typeof(ProtectionArea))]
         [System.Web.Http.HttpGet]
         [Route("api/protectionarea/{id:int}")]
         public IHttpActionResult Get(int id)
         {
-            return Ok(ProtectionAreasServices.Get(id));
+            try
+            {
+                return Ok(ProtectionAreasServices.Get(id));
+            }
+            catch
+            {
+                return Ok(NotFound());
+            }
         }
 
         // POST: api/ProtectionArea/Post
         [ResponseType(typeof(ProtectionArea))]
         [System.Web.Http.HttpPost]
         [Route("api/protectionarea")]
-        public IHttpActionResult Post(ProtectionArea collection)
+        public IHttpActionResult Post(ProtectionArea protectionArea)
         {
-            return Ok(ProtectionAreasServices.Create(collection));
+            try
+            {
+                var _protectionArea = ProtectionAreasServices.Create(protectionArea);
+                new Auditing(System.Web.HttpContext.Current, _protectionArea.Id).RegisterAuditing();
+
+                return Ok(protectionArea);
+            }
+            catch
+            {
+                return Ok("Erro ao cadastrar a ProtectionArea");
+            }
         }
 
         // PUT: api/ProtectionArea/Put/5
@@ -61,9 +80,17 @@ namespace SuperHeroAPI.Controllers
         [Route("api/protectionarea")]
         public IHttpActionResult Put(int id, [FromBody]ProtectionArea protectionArea)
         {
-            protectionArea.Id = id;
-              
-            return Ok(ProtectionAreasServices.Update(protectionArea));
+            try
+            {
+                protectionArea.Id = id;
+                var _protectionArea = ProtectionAreasServices.Update(protectionArea);
+                new Auditing(System.Web.HttpContext.Current, _protectionArea.Id).RegisterAuditing();
+
+                return Ok(_protectionArea);
+            }
+            catch {
+                return Ok("Erro ao atualizar a ProtectionArea");
+            }
         }
 
         // DELETE: api/ProtectionArea/Delete/5
@@ -72,7 +99,15 @@ namespace SuperHeroAPI.Controllers
         [Route("api/protectionarea/{id:int}")]
         public IHttpActionResult Delete(int id)
         {
-            return Ok(ProtectionAreasServices.Remove(id));
+            try {
+                var _protectionArea = ProtectionAreasServices.Remove(id);
+                new Auditing(System.Web.HttpContext.Current, _protectionArea.Id).RegisterAuditing();
+
+                return Ok(_protectionArea);
+            }
+            catch {
+                return Ok("Erro ao excluir a ProtectionArea");
+            }
         }
 
         #endregion

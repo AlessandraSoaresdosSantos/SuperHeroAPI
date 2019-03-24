@@ -6,7 +6,7 @@ using System.Web.Http.Description;
 
 namespace SuperHeroAPI.Controllers
 {
-   
+
     public class SuperHeroController : ApiController
     {
         #region Declaração e inicialização de variáveis 
@@ -30,7 +30,14 @@ namespace SuperHeroAPI.Controllers
         [Route("api/superhero")]
         public IEnumerable<SuperHero> Get()
         {
-            return SuperHerosServices.GetAll().ToList();
+            try
+            {
+                return SuperHerosServices.GetAll().ToList();
+            }
+            catch
+            {
+                return null;
+            }
         }
 
         // GET: api/SuperHero/GetArea/1/2
@@ -40,16 +47,26 @@ namespace SuperHeroAPI.Controllers
         [Route("api/superhero/{latitude}/{longitude}")]
         public IHttpActionResult GetArea([FromUri]string latitude, [FromUri]string longitude)
         {
-            float _latitude = float.Parse(latitude);
-            float _longitude = float.Parse(longitude);
+            try
+            {
+                float _latitude = float.Parse(latitude);
+                float _longitude = float.Parse(longitude);
 
-            List<ProtectionArea> protectionAreas = new ProtectionAreaServices(context).GetRadiusSuperHero(_latitude, _longitude);
+                List<ProtectionArea> protectionAreas = new ProtectionAreaServices(context).GetRadiusSuperHero(_latitude, _longitude);
 
-            if (protectionAreas != null) {
-                return Ok(SuperHerosServices.GetAllByRadius(protectionAreas.Select(_ => _.Id).ToList()));
+                if (protectionAreas != null)
+                {
+                    var _superHero = SuperHerosServices.GetAllByRadius(protectionAreas.Select(_ => _.Id).ToList());
+
+                    return Ok(_superHero);
+                }
+                return Ok(NotFound());
+
             }
-
-            return Ok();
+            catch
+            {
+                return Ok(NotFound());
+            }
         }
 
         // GET: SuperHero/Get/5
@@ -59,7 +76,14 @@ namespace SuperHeroAPI.Controllers
         [Route("api/superhero/{id:int}")]
         public IHttpActionResult Get(int id)
         {
-            return Ok(SuperHerosServices.Get(id));
+            try
+            {
+                return Ok(SuperHerosServices.Get(id));
+            }
+            catch
+            {
+                return Ok(NotFound());
+            }
         }
 
         // POST: SuperHero/Post
@@ -67,9 +91,19 @@ namespace SuperHeroAPI.Controllers
         [ResponseType(typeof(SuperHero))]
         [System.Web.Http.HttpPost]
         [Route("api/superhero")]
-        public IHttpActionResult Post(SuperHero collection)
+        public IHttpActionResult Post(SuperHero superHero)
         {
-            return Ok(SuperHerosServices.Create(collection));
+            try
+            {
+
+                var _superHero = SuperHerosServices.Create(superHero);
+                new Auditing(System.Web.HttpContext.Current, _superHero.Id).RegisterAuditing();
+                return Ok(_superHero);
+            }
+            catch
+            {
+                return Ok("Erro ao cadastgrar o SuperHero");
+            }
         }
 
         // GET: SuperHero/Put/5
@@ -79,9 +113,18 @@ namespace SuperHeroAPI.Controllers
         [Route("api/superhero")]
         public IHttpActionResult Put(int id, [FromBody]SuperHero superHero)
         {
-            superHero.Id = id;
+            try
+            {
+                superHero.Id = id;
+                var _superHero = SuperHerosServices.Update(superHero);
+                new Auditing(System.Web.HttpContext.Current, _superHero.Id).RegisterAuditing();
 
-            return Ok(SuperHerosServices.Update(superHero));
+                return Ok(_superHero);
+            }
+            catch
+            {
+                return Ok("Erro ao atualizar o SuperHero");
+            }
         }
 
         // POST: SuperHero/Delete/5
@@ -91,7 +134,17 @@ namespace SuperHeroAPI.Controllers
         [Route("api/superhero/{id:int}")]
         public IHttpActionResult Delete(int id)
         {
-            return Ok(SuperHerosServices.Remove(id));
+            try
+            {
+                var _superHero = SuperHerosServices.Remove(id);
+                new Auditing(System.Web.HttpContext.Current, _superHero.Id).RegisterAuditing();
+
+                return Ok(_superHero);
+            }
+            catch
+            {
+                return Ok("Erro ao excluir o SuperHero");
+            }
         }
 
         #endregion

@@ -38,7 +38,7 @@ namespace SuperHeroAPI.Tests.Controllers
          }
 
         [TestMethod]
-        public void TestInclusao()
+        public void TestInsert()
         {
             Role role = new Role() {
                 Id= 3,
@@ -55,5 +55,37 @@ namespace SuperHeroAPI.Tests.Controllers
             Assert.AreEqual("Cadastrado realizado com sucesso",  resultado);
         }
 
+        [TestMethod]
+        public void TestUpdate()
+        {
+            Role role = new Role()
+            {
+                Id = 1,
+                Name = "Admin Alterado",
+                User_Id = 1
+            };
+
+            Mock<IRolesMoq> mock = new Mock<IRolesMoq>();
+            mock.Setup(m => m.Update(role)).Returns("Atualização realizada com sucesso");
+            var rolesMoq = new RolesMoq();
+            var resultado = rolesMoq.Update(role);
+            Assert.IsNotNull(resultado);
+
+            Assert.AreEqual("Atualização realizada com sucesso", resultado);
+        }
+
+        [TestMethod]
+        public void TestDelete()
+        {
+            Role role = new Role();
+
+            Mock<IRolesMoq> mock = new Mock<IRolesMoq>();
+            mock.Setup(m => m.Delete(1)).Returns("Exclusão realizada com sucesso");
+            var rolesMoq = new RolesMoq();
+            var resultado = rolesMoq.Delete(1);
+            Assert.IsNotNull(resultado);
+
+            Assert.AreEqual("Exclusão realizada com sucesso", resultado);
+        }
     }
 }

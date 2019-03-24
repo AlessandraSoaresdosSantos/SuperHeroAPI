@@ -29,7 +29,14 @@ namespace SuperHeroAPI.Controllers
         [Route("api/role")]
         public IEnumerable<Role> Get()
         {
-            return RolesServices.GetAll().ToList();
+            try
+            {
+                return RolesServices.GetAll().ToList();
+            }
+            catch
+            {
+                return null;
+            }
         }
 
         // GET: Role/Get/5
@@ -38,16 +45,33 @@ namespace SuperHeroAPI.Controllers
         [Route("api/role/{id:int}")]
         public IHttpActionResult Get(int id)
         {
-            return Ok(RolesServices.Get(id));
+            try
+            {
+                return Ok(RolesServices.Get(id));
+            }
+            catch
+            {
+                return Ok(NotFound());
+            }
         }
 
         // POST: Role/Post
         [ResponseType(typeof(Role))]
         [System.Web.Http.HttpPost]
         [Route("api/role")]
-        public IHttpActionResult Post(Role collection)
+        public IHttpActionResult Post(Role role)
         {
-            return Ok(RolesServices.Create(collection));
+            try
+            {
+                var _role = RolesServices.Create(role);
+                new Auditing(System.Web.HttpContext.Current, role.Id).RegisterAuditing();
+
+                return Ok(_role);
+            }
+            catch
+            {
+                return Ok("Erro ao cadastrar o Role");
+            }
         }
 
         // GET: Role/Put/5
@@ -56,9 +80,17 @@ namespace SuperHeroAPI.Controllers
         [Route("api/role")]
         public IHttpActionResult Put(int id, [FromBody]Role role)
         {
-            role.Id = id;
-
-            return Ok(RolesServices.Update(role));
+            try
+            {
+                role.Id = id;
+                var _role = RolesServices.Update(role);
+                new Auditing(System.Web.HttpContext.Current, role.Id).RegisterAuditing();
+                return Ok(_role);
+            }
+            catch
+            {
+                return Ok("Erro ao atualizar o Role");
+            }
         }
 
         // POST: Role/Delete/5
@@ -67,9 +99,21 @@ namespace SuperHeroAPI.Controllers
         [Route("api/role/{id:int}")]
         public IHttpActionResult Delete(int id)
         {
-            return Ok(RolesServices.Remove(id));
+            try
+            {
+                var _role = RolesServices.Remove(id);
+                new Auditing(System.Web.HttpContext.Current, id).RegisterAuditing();
+
+                return Ok(_role);
+            }
+            catch
+            {
+                return Ok("Erro ao excluiri o Role");
+            }
         }
 
         #endregion
     }
+
+
 }

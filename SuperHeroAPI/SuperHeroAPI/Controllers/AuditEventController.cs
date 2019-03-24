@@ -6,7 +6,7 @@ using System.Web.Http.Description;
 
 namespace SuperHeroAPI.Controllers
 {
-   // [AuthorizeEnum(RolesEnum.Roles.Admin)]
+    // [AuthorizeEnum(RolesEnum.Roles.Admin)]
     public class AuditEventController : ApiController
     {
 
@@ -29,21 +29,30 @@ namespace SuperHeroAPI.Controllers
         [Route("api/auditevent")]
         public IEnumerable<AuditEvent> Get()
         {
-            return AuditEventServices.GetAll().ToList();
+            try
+            {
+                return AuditEventServices.GetAll().ToList();
+            }
+            catch
+            {
+                return null;
+            }
         }
 
-        /// <summary>
-        /// Return AuditEventbyId
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
         // GET: AuditEvent/Get/5
         [ResponseType(typeof(AuditEvent))]
         [System.Web.Http.HttpGet]
         [Route("api/auditevent/{id:int}")]
         public IHttpActionResult Get(int id)
         {
-            return Ok(AuditEventServices.Get(id));
+            try
+            {
+                return Ok(AuditEventServices.Get(id));
+            }
+            catch
+            {
+                return Ok(NotFound());
+            }
         }
 
         // POST: AuditEvent/Post
@@ -52,7 +61,14 @@ namespace SuperHeroAPI.Controllers
         [Route("api/auditevent")]
         public IHttpActionResult Post(AuditEvent collection)
         {
-            return Ok(AuditEventServices.Create(collection));
+            try
+            {
+                return Ok(AuditEventServices.Create(collection));
+            }
+            catch
+            {
+                return Ok("Erro ao cadastrar o AuditEvent");
+            }
         }
 
         // GET: AuditEvent/Put/5
@@ -61,7 +77,14 @@ namespace SuperHeroAPI.Controllers
         [Route("api/auditevent")]
         public IHttpActionResult Put([FromBody]AuditEvent auditEvent)
         {
-            return Ok(AuditEventServices.Update(auditEvent));
+            try
+            {
+                return Ok(AuditEventServices.Update(auditEvent));
+            }
+            catch
+            {
+                return Ok("Erro atualizar o AuditEvent");
+            }
         }
 
         // POST: AuditEvent/Delete/5
@@ -69,7 +92,14 @@ namespace SuperHeroAPI.Controllers
         [Route("api/auditevent/{id:int}")]
         public IHttpActionResult Delete(int id)
         {
-            return Ok(AuditEventServices.Remove(id));
+            try
+            {
+                return Ok(AuditEventServices.Remove(id));
+            }
+            catch
+            {
+                return Ok("Erro ao excluir o AuditEvent");
+            }
         }
 
         #endregion

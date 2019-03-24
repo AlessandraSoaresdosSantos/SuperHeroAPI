@@ -12,7 +12,7 @@ namespace SuperHeroAPI.EntityFramework
         IList<Role> RetornaRoles();
         string Insert(Role role);
         string Update(Role role);
-        string Delete(Role role);
+        string Delete(int id);
 
     }
 }
