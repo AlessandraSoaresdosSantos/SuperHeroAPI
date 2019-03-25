@@ -102,7 +102,7 @@ namespace SuperHeroAPI.Controllers
             }
             catch
             {
-                return Ok("Erro ao cadastgrar o SuperHero");
+                return Ok("Erro ao cadastrar o SuperHero");
             }
         }
 

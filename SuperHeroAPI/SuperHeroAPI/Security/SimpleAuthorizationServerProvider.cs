@@ -1,14 +1,8 @@
-﻿using Microsoft.AspNet.Identity;
-using Microsoft.Owin.Security.OAuth;
+﻿using Microsoft.Owin.Security.OAuth;
 using SuperHeroAPI.EntityFramework;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Net;
 using System.Security.Claims;
-using System.Threading;
 using System.Threading.Tasks;
-using System.Web;
 
 namespace SuperHeroAPI
 {
@@ -46,12 +40,7 @@ namespace SuperHeroAPI
            identity.AddClaim(new Claim(ClaimTypes.Email, user.Password));
            identity.AddClaim(new Claim(ClaimTypes.Sid, user.Id.ToString()));
            identity.AddClaim(new Claim(ClaimTypes.Role, role));
-           // new Claim(ClaimTypes.Expired, "20");
-          
-            //var claimsPrincipal = new ClaimsPrincipal(identity);
-            
-            //Thread.CurrentPrincipal = claimsPrincipal;
-
+           
             contextOAuth.Validated(identity);
         }
     }

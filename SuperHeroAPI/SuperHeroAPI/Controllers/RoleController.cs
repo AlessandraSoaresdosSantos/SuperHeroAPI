@@ -47,7 +47,7 @@ namespace SuperHeroAPI.Controllers
         {
             try
             {
-                return Ok(RolesServices.Get(id));
+               return Ok(RolesServices.Get(id));
             }
             catch
             {
@@ -108,7 +108,7 @@ namespace SuperHeroAPI.Controllers
             }
             catch
             {
-                return Ok("Erro ao excluiri o Role");
+                return Ok("Erro ao excluir o Role");
             }
         }
 

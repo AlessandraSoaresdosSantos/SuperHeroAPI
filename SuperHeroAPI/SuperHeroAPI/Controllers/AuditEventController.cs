@@ -6,7 +6,7 @@ using System.Web.Http.Description;
 
 namespace SuperHeroAPI.Controllers
 {
-    // [AuthorizeEnum(RolesEnum.Roles.Admin)]
+    [AuthorizeEnum(RolesEnum.Roles.Admin)]
     public class AuditEventController : ApiController
     {
 
@@ -59,11 +59,14 @@ namespace SuperHeroAPI.Controllers
         [ResponseType(typeof(AuditEvent))]
         [System.Web.Http.HttpPost]
         [Route("api/auditevent")]
-        public IHttpActionResult Post(AuditEvent collection)
+        public IHttpActionResult Post(AuditEvent audit)
         {
             try
             {
-                return Ok(AuditEventServices.Create(collection));
+                var auditEvent = AuditEventServices.Create(audit);
+                new Auditing(System.Web.HttpContext.Current, auditEvent.Id).RegisterAuditing();
+ 
+                return Ok(auditEvent);
             }
             catch
             {
@@ -79,7 +82,10 @@ namespace SuperHeroAPI.Controllers
         {
             try
             {
-                return Ok(AuditEventServices.Update(auditEvent));
+                var audit = AuditEventServices.Update(auditEvent);
+                new Auditing(System.Web.HttpContext.Current, audit.Id).RegisterAuditing();
+
+                return Ok(audit);
             }
             catch
             {
@@ -94,7 +100,9 @@ namespace SuperHeroAPI.Controllers
         {
             try
             {
-                return Ok(AuditEventServices.Remove(id));
+                var audit = AuditEventServices.Remove(id);
+                new Auditing(System.Web.HttpContext.Current, audit.Id).RegisterAuditing();
+                return Ok(audit);
             }
             catch
             {
