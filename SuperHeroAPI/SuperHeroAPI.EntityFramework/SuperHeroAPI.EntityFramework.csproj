@@ -98,8 +98,18 @@
       <DependentUpon>201903201712463_AddClassesReferences.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Moq\AuditEventsMoq.cs" />
+    <Compile Include="Moq\Interfaces\IAuditEventsMoq.cs" />
+    <Compile Include="Moq\Interfaces\IProtectionAreasMoq.cs" />
     <Compile Include="Moq\Interfaces\IRolesMoq.cs" />
+    <Compile Include="Moq\Interfaces\ISuperHeroesMoq.cs" />
+    <Compile Include="Moq\Interfaces\ISuperPowersMoq.cs" />
+    <Compile Include="Moq\Interfaces\IUsersMoq.cs" />
+    <Compile Include="Moq\ProtectionAreasMoq.cs" />
     <Compile Include="Moq\RolesMoq.cs" />
+    <Compile Include="Moq\SuperHeroesMoq.cs" />
+    <Compile Include="Moq\SuperPowersMoq.cs" />
+    <Compile Include="Moq\UsersMoq.cs" />
     <Compile Include="PreparaHash\PreparaHash.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\AuditEventRepository.cs" />
